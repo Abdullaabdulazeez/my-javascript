@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise</title>
+</head>
+<body>
+   <input type="text" placeholder="name" name="yourName" onkeydown="
+    fighter(event);">
+   <button onclick="
+        namingInput();
+   ">submit</button>
+
+    <p class="js-name"></p>
+
+    <input type="text" class="entheluu" onkeyup="
+     const inputHello = document.querySelector('.entheluu');
+     document.querySelector('.adikkada').innerHTML = inputHello.value;">
+
+     <p class="adikkada"></p>
+
+    <script>
+        function namingInput() {
+            const inputElement = document.querySelector('input[name=yourName]');
+            document.querySelector('.js-name').innerHTML = `what's app ${inputElement.value}.`
+
+        }
+
+        function fighter (event) {
+            if (event.key === 'Enter') {
+                namingInput ();
+            }
+        }
+    </script>
+</body>
+</html>

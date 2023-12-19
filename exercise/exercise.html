@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise</title>
+</head>
+<body>
+    <script>
+        const hour = new Date();
+        let currentHour = hour.getHours();
+        let result = '';
+        const name = 'abdulla';
+        if (currentHour >= 5  && currentHour <= 12) {
+            result = 'good morning';
+            console.log(`${result} ${name}`);
+        }
+        else if (currentHour >= 13 && currentHour <= 17) {
+            result = 'good after noon';
+            console.log(`${result} ${name}`);
+        }
+        else {
+            result = 'good night';
+            console.log(`${result} ${name}`);
+        }
+    </script>
+    
+</body>
+</html>
